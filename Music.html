@@ -3,29 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="Music.js" defer></script>
+  <script src="Music2.js" defer></script>
   <title>Music Search</title>
 </head>
+
 <body>
 
-  <form method="post" action="/" id="Artist-form">
-    <div class="input-field">
+  <div> 
+    <audio controls id="audio-player">
+    </audio> 
+  </div>
+
+  <form action="" method="POST" id="form">
+
+    <div class="input-search">
       <label for="Artist">Search by Artist</label>
-      <input 
-      type="text"
-      name="Artist"
-      id="Artist"
-      placeholder="Type Artist Name"
-      /> 
+      <input type="text"
+      name="music-search"
+      id="music-search"
+      placeholder="Search for Artist"
+      required /> 
     </div> 
+
     <div class="Search Button">
-      Find It: 
-      <input 
-      type="submit"
-      name="search"
-      id="Artist"
-      /> 
+      <input type="submit" value="Search" /> 
     </div>
   </form>
+
+  <div id="display"> 
+  <div id="search-results"></div>
+  </div>
+
+
+    <!-- This is where the display for the different songs will be -->
+    <section>
+      <p><b>Search Results:</b></p>
+      <div id="musicContainer">
+        <!-- <div class="songOption"></div>
+        <div class="songOption"></div>
+        <div class="songOption"></div>
+        <div class="songOption"></div>
+        <div class="songOption"></div>
+        <div class="songOption"></div>
+        <div class="songOption"></div>
+        <div class="songOption"></div>
+        <div class="songOption"></div>
+        <div class="songOption"></div> -->
+      </div>
+    </section>
 </body>
 </html>
