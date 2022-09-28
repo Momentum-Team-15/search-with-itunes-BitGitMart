@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="Music2.js" defer></script>
-  <title>Music Search</title>
+  <link rel="stylesheet" href="music.css"> 
+  <title>Search-ey Perchie</title>
 </head>
 
 <body>
+  <h1>Clickity Rickity Tickety Musically</h1>
 
   <div> 
     <audio controls id="audio-player">
     </audio> 
   </div>
 
-  <form action="" method="POST" id="form">
+  <form action="" method="POST" id="webz">
 
     <div class="input-search">
-      <label for="Artist">Search by Artist</label>
+      <label for="Artist">Search by Artist/Album/Song</label>
       <input type="text"
       name="music-search"
       id="music-search"
-      placeholder="Search for Artist"
+      placeholder="Search"
       required /> 
     </div> 
 
@@ -30,26 +32,7 @@
     </div>
   </form>
 
-  <div id="display"> 
   <div id="search-results"></div>
-  </div>
 
-
-    <!-- This is where the display for the different songs will be -->
-    <section>
-      <p><b>Search Results:</b></p>
-      <div id="musicContainer">
-        <!-- <div class="songOption"></div>
-        <div class="songOption"></div>
-        <div class="songOption"></div>
-        <div class="songOption"></div>
-        <div class="songOption"></div>
-        <div class="songOption"></div>
-        <div class="songOption"></div>
-        <div class="songOption"></div>
-        <div class="songOption"></div>
-        <div class="songOption"></div> -->
-      </div>
-    </section>
 </body>
 </html>
